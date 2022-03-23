@@ -120,10 +120,10 @@ body, html {
     }
 
 }
-
+/* 
 .content-wrapper {
     width: 60%;
-}
+} */
 
 .element-02, .element-06 {
     background-image: url(../assets/placeholder.jpeg);
@@ -154,10 +154,10 @@ body, html {
 .content-body {
     color: white;
     font-size: 20px;
-    transition: 0.5s;
 }
 
-.content-pq {
+
+.anim-typewriter_c {
     position: relative;
     width: 100%;
     /* margin: 0 auto; */
@@ -167,15 +167,27 @@ body, html {
     font-weight: bold;
     color: white;
     font-style: italic;
+    height: 0;
+    transition: height .5s;
 }
 
-.anim-typewriter {
-    display: none;
+
+.element-02:hover .anim-typewriter_c:nth-child(1) {
+    height: 50px;
+    animation: typewriter 2s steps(50) .5s 1 normal both;
+}
+.element-02:hover .anim-typewriter_c:nth-child(2) {
+    height: 50px;
+    animation: typewriter 2s steps(50) 2.5s 1 normal both;
 }
 
-.element-02:hover .anim-typewriter {
-    display: block;
-    animation: typewriter 4s steps(50) .5s 1 normal both;
+.element-06:hover .anim-typewriter_c:nth-child(1) {
+    height: 50px;
+    animation: typewriter 2s steps(50) .5s 1 normal both;
+}
+.element-06:hover .anim-typewriter_c:nth-child(2) {
+    height: 50px;
+    animation: typewriter 2s steps(50) 2.5s 1 normal both;
 }
 
 @keyframes typewriter {
@@ -255,7 +267,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
 
 .element-07 {
     background-color: #008BF8;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .credit-header {
@@ -343,6 +355,10 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     border: 1px solid black;
 }
 
+.pq-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .card-custom-title {
         font-size: 25px;
@@ -353,6 +369,56 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
 }
 
 @media screen and (max-width: 991px) {
+    .element-02, .element-06 {
+        height: 100%;
+        padding: 30px 0;
+    }
+
+    .element-02:hover, .element-06:hover {
+        height: 100%;
+    }
+
+    .content-wrapper {
+        padding: 0 10%;
+        height: 100%;
+    }
+
+    .content-body .c-footer  {
+        margin-bottom: 20px;
+    }
+    
+    .anim-typewriter_c {
+        display: none;
+    }
+    
+
+    .content-title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .content-body {
+        font-size: 15px;
+    }
+
+    .pq-mobile {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+    }
+    
+    .element-02:hover .anim-typewriter_c:nth-child(1) {
+        animation: none;
+    }
+    .element-02:hover .anim-typewriter_c:nth-child(2) {
+        animation: none;
+    }
+
     .card-custom-title {
         font-size: 30px;
     }
@@ -456,4 +522,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
         font-size: 14px !important;
     }
 
+    .editorial {
+        min-height: 300px;
+    }
 }
