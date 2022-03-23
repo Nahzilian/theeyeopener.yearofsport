@@ -2,7 +2,12 @@ let carousel = document.getElementById("slide-container")
 let slideContents = carousel.children
 let activeSlide = 0
 
-let measure = carousel.offsetWidth / 3
+let dif = 3
+let screenSize = window.innerWidth
+if (screenSize <= 991) dif = 2
+if (screenSize <= 680) dif = 1
+
+let measure = carousel.offsetWidth / dif
 let offSet = 0
 for (let slide of slideContents) {
     slide.style.width = `${measure}px`

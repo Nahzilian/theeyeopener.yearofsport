@@ -1,4 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -10,7 +12,7 @@ body, html {
 }
 
 .section-wrapper {
-    padding: 100px 0;
+    padding: 60px 0 10px;
 }
 
 .section-wrapper .row {
@@ -32,6 +34,7 @@ body, html {
     border-radius: 20px;
     width: 100%;
     border: 1px solid black;
+    font-family: 'Inter';
     -webkit-box-shadow: 0px 9px 2px 0px rgba(0, 0, 0, 0.61);
     box-shadow: 0px 9px 2px 0px rgba(0, 0, 0, 0.61);
 }
@@ -67,6 +70,10 @@ body, html {
 
 .c-footer {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-text {
+    margin-top: 10px;
 }
 
 .card-custom-title {
@@ -80,7 +87,7 @@ body, html {
 
 .card-custom-title p {
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-left: 5px;
 }
 
@@ -102,14 +109,6 @@ body, html {
     display: none;
 }
 
-@media screen and (max-width: 991px) {
-    .element-01 .container .row .col-xs-12 {
-        margin-bottom: 50px;
-    }
-
-    /* margin-right: calc(-.5 * var(--bs-gutter-x)); */
-
-}
 
 @media screen and (max-width: 576px) {
     .card-custom-title {
@@ -138,7 +137,7 @@ body, html {
 }
 
 .element-02:hover, .element-06:hover {
-    height: 500px;
+    height: 550px;
 }
 
 .content-title {
@@ -149,12 +148,13 @@ body, html {
     padding-left: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .content-body {
     color: white;
     font-size: 20px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .content-pq {
@@ -163,6 +163,10 @@ body, html {
     /* margin: 0 auto; */
     white-space: nowrap;
     overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
 }
 
 .anim-typewriter {
@@ -171,7 +175,7 @@ body, html {
 
 .element-02:hover .anim-typewriter {
     display: block;
-    animation: typewriter 4s steps(100) 1s 1 normal both;
+    animation: typewriter 4s steps(50) .5s 1 normal both;
 }
 
 @keyframes typewriter {
@@ -234,6 +238,10 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     cursor: url('../assets/right-arrow.svg'), auto;
 }
 
+.prev-button i, .next-button i {
+    display: none;
+}
+
 #slide-container {
     width: 100%;
     overflow: visible;
@@ -247,6 +255,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
 
 .element-07 {
     background-color: #008BF8;
+    padding-bottom: 100px;
 }
 
 .credit-header {
@@ -308,6 +317,18 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     height: 0;
 }
 
+.credit:hover {
+    top:0;
+    -webkit-box-shadow: 0px 9px 2px 0px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 9px 2px 0px rgba(0, 0, 0, 0.61);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .credit-title {
     position: relative;
     top: -40px;
@@ -320,4 +341,119 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-custom-title {
+        font-size: 25px;
+    }
+    .card-custom-title p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-custom-title {
+        font-size: 30px;
+    }
+    .card-custom-title p{
+        width: 80%;
+    }
+
+    .section-wrapper .row {
+        padding-bottom: 0;
+    }
+
+    .element-01 .container .row .col-xs-12,
+    .element-03 .container .row .col-xs-12,
+    .element-05 .container .row .col-xs-12,
+    .element-07 .container .row .col-xs-12 {
+        margin-bottom: 50px;
+    }
+    .credit {
+        margin-top: 50px;
+    }
+
+    .prev-button, .next-button {
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+        color: #DC0073;
+    }
+
+    .prev-button, .next-button {
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .card-custom-title {
+        font-size: 25px;
+    }
+    .card-custom-title p{
+        width: 90%;
+    }
+
+    .credit-header {
+        font-size: 20px;
+    }
+
+    .credit p {
+        font-size: 14px;
+    }
+
+    .prev-button {
+        position: absolute;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        cursor: pointer;
+        top: 0;
+        z-index: 2;
+    }
+    
+    .next-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .prev-button i, .next-button i {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .credit-header {
+        font-size: 1rem;
+    }
+
+    .credit p, .feature-name  {
+        font-size: 14px !important;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .card-custom-title {
+        font-size: 21px;
+    }
+    .card-custom-title p{
+        width: 100%;
+    }
+
+    .credit-header {
+        font-size: 0.7rem;
+    }
+
+    .credit p, .feature-name  {
+        font-size: 14px !important;
+    }
+
 }
