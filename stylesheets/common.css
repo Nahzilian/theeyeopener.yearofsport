@@ -8,6 +8,7 @@
     transition: 1s;
     display: grid;
     place-items: center;
+    z-index: 100;
 }
 
 @media screen and (max-width: 767px) {

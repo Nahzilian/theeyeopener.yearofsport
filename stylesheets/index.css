@@ -4,6 +4,7 @@
 body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: 'Inter';
 }
 
 .article-header {
@@ -60,7 +61,6 @@ body, html {
 
 .custom-card-wrapper {
     min-height: 250px;
-    background-image: url('../assets/placeholder.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@ body, html {
 }
 
 .card-custom-title p {
-    width: 80%;
+    width: 88%;
     margin-bottom: 5px;
     padding-left: 5px;
 }
@@ -109,6 +109,30 @@ body, html {
     display: none;
 }
 
+.read-story {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+.read-story a{
+    display: grid;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #DC0073;
+    border-radius: 5px;
+    place-items: center;
+    font-weight: bold;
+}
+
+.read-story a:hover {
+    background-color: #97004e;
+
+}
 
 @media screen and (max-width: 576px) {
     .card-custom-title {
@@ -126,14 +150,22 @@ body, html {
 } */
 
 .element-02, .element-06 {
-    background-image: url(../assets/placeholder.jpeg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     place-items: center;
     transition: 1s;
     height: 450px;
+}
+
+.element-02 {
+    background-image: url(../assets/homepage/OUA_header_courtesynjes_March2022.jpg);
+}
+
+.element-06 {
+    background-image: url(../assets/homepage/IndigenousAthletes_header_JesMason_March2022.jpg);
+    background-position: top center;
 }
 
 .element-02:hover, .element-06:hover {
@@ -525,4 +557,52 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     .editorial {
         min-height: 300px;
     }
+}
+
+.card-1 {
+    background-image: url('../assets/homepage/YearinGaming_March30.jpg');
+}
+
+.card-2 {
+    background-image: url('../assets/homepage/CollectorsNFT_LailaAmer_March30.jpg');
+}
+
+.card-3 {
+    background-image: url('../assets/homepage/AnimeSports_BerryShi_March2022.jpg');
+}
+
+.card-4 {
+    background-image: url('../assets/homepage/Disparity_header_JesMason_March2022.jpg');
+}
+
+.card-5 {
+    background-image: url('../assets/homepage/UnsungHeroes_header_JesMason_March2022.jpg');
+}
+
+.card-6 {
+    background-image: url('../assets/homepage/RamsRookieDiaryFinal_LailaAmer_March30.jpg');
+}
+
+.card-7 {
+    background-image: url('../assets/homepage/Coaches_header_JesMason_March2022.jpg');
+}
+
+.card-8 {
+    background-image: url('../assets/homepage/Perdictions_vanessakauk_mar22.jpeg');
+}
+
+.card-9 {
+    background-image: url('../assets/homepage/RamsRookieDiary_LailaAmer_March30.jpg');
+}
+
+.card-10 {
+    background-image: url('../assets/homepage/Superstitions_vanessak_mar22.jpeg');
+}
+
+.card-11 {
+    background-image: url('../assets/homepage/UnofficialAwards_landingpage_AndrewYang_March2022.jpg');
+}
+
+.card-12 {
+    background-image: url('../assets/homepage/GavinAxelrodEd_desktopheader_JesMason_March2022.jpg');
 }
