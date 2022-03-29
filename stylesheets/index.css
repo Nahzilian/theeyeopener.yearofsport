@@ -20,7 +20,8 @@ body, html {
     padding-bottom: 50px;
 }
 
-.section-wrapper .row .col-lg-6 {
+.section-wrapper .row .col-lg-6,
+.section-wrapper .row .col-lg-4 {
     padding-left: 40px;
     padding-right: 40px;
 
