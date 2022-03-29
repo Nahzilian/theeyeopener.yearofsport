@@ -124,7 +124,7 @@ body, html {
     text-decoration: none;
     color: white;
     background-color: #DC0073;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     place-items: center;
     font-weight: bold;
 }
@@ -150,7 +150,7 @@ body, html {
 } */
 
 .element-02, .element-06 {
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -160,11 +160,11 @@ body, html {
 }
 
 .element-02 {
-    background-image: url(../assets/homepage/OUA_header_courtesynjes_March2022.jpg);
+    background-image: url(../assets/homepage/OUA_landingpage_header_courtesynjes_March2022.jpg);
 }
 
 .element-06 {
-    background-image: url(../assets/homepage/IndigenousAthletes_header_JesMason_March2022.jpg);
+    background-image: url(../assets/homepage/IndigenousAthletes_landingpage_header_JesMason_March2022.jpg);
     background-position: top center;
 }
 
@@ -205,20 +205,24 @@ body, html {
 
 
 .element-02:hover .anim-typewriter_c:nth-child(1) {
-    height: 50px;
+    height: 70px;
+    padding: 20px 0;
     animation: typewriter 2s steps(50) .5s 1 normal both;
 }
 .element-02:hover .anim-typewriter_c:nth-child(2) {
-    height: 50px;
+    height: 70px;
+    padding: 0 0 20px 0;
     animation: typewriter 2s steps(50) 2.5s 1 normal both;
 }
 
 .element-06:hover .anim-typewriter_c:nth-child(1) {
-    height: 50px;
+    height: 70px;
+    padding: 20px 0;
     animation: typewriter 2s steps(50) .5s 1 normal both;
 }
 .element-06:hover .anim-typewriter_c:nth-child(2) {
-    height: 50px;
+    height: 70px;
+    padding: 0 0 20px 0;
     animation: typewriter 2s steps(50) 2.5s 1 normal both;
 }
 
@@ -251,7 +255,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     background-color:#89FC00;
     font-size: 40px;
     text-transform: uppercase;
-    
+    font-family: 'Roboto Mono', monospace;
 }
 /* .slide-content-wrapper {
     width: 33.33%;
@@ -491,7 +495,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
         font-size: 25px;
     }
     .card-custom-title p{
-        width: 90%;
+        width: 100%;
     }
 
     .credit-header {
@@ -540,7 +544,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
 
 @media screen and (max-width: 450px) {
     .card-custom-title {
-        font-size: 21px;
+        font-size: 18px;
     }
     .card-custom-title p{
         width: 100%;
