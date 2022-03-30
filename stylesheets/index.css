@@ -311,6 +311,7 @@ background: linear-gradient(0deg, rgba(4,231,98,1) 0%, rgba(245,183,0,1) 100%);
     font-style: italic;
     font-size: 23px;
     text-transform: uppercase;
+    padding-bottom: 5px;
 }
 
 .credit p {
