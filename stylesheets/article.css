@@ -204,10 +204,6 @@ blockquote {
     .article-body .content, .assets-section {
         padding: 10px 50px;
     }
-    .assets-section {
-        display: grid;
-        place-items: center;
-    }
 
     .article-asset {
         display: block;
