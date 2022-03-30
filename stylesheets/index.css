@@ -52,15 +52,14 @@ body, html {
 
 .tall-card .custom-card-wrapper{
     min-height: 585px;
-
 }
 
 .card-body {
-    height: 60%;
+    min-height: 190px;
 }
 
 .custom-card-wrapper {
-    min-height: 250px;
+    min-height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
